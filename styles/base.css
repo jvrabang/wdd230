@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+header {
+    background-color:  #29363B;
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 135px;
+}
+
+header img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+header img, header h1 {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+h1{
+    color: #fafafa;
+    padding: 1rem;
+}
+
+nav {
+    margin-top: 135px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #fafafa;
+    background-color: #383d3f;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #383d3fd6;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template: auto / auto
+}
+
+main ul {
+    list-style: none;
+}
+
+main h2{
+    text-align: center;
+}
+
+main h2::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #383d3f;
+    margin-top: 1rem;
+}
+
+main h3 {
+    text-align: center;
+    background-color:  #383d3f;
+    color: #fafafa;
+    margin-top: 0;
+    border-radius: 9px 9px 0 0;
+    padding: .5rem;
+}
+
+.card p {
+    margin-left: 2rem;
+}
+
+main .card {
+    border: 1px solid #29363B;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color:  #29363B;
+    text-align: center;
+    color: #fafafa;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    padding: .5rem;
+    margin: 0;
+}
+
+/* * {
+    border: 1px solid blue;
+} */
+
