@@ -55,7 +55,9 @@ nav a:hover{
 main {
     margin: auto;
     display: grid;
-    grid-template: auto / auto
+    grid-template: auto / auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 main h3 {
