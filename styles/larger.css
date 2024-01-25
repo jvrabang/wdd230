@@ -1,12 +1,17 @@
 @media (min-width: 640px) {
-	nav ul {
+	.navigation {
 		display: flex;
 	}
-	nav ul li {
+	.navigation li {
+        display: block;
 		flex: 1 1 100%;
 	}
 
-    nav ul li a {
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation ul li a {
         padding: 1.25rem;
     }
 
@@ -28,6 +33,16 @@
     }
 
     nav {
-        margin-top: 130px;
+        margin-top: 135px;
     }
+
+    #menu {
+        display: none;
+    }
+
+   
+    main .card:nth-child(4) {
+        grid-column: span 2;
+    }
+
 }
