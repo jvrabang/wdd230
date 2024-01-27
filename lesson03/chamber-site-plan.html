@@ -10,115 +10,118 @@
     <link rel="stylesheet" href="styles/chamber-site-plan-style.css">
 </head>
 <body>
-    <div id="content">
-        <header>
-            <img id="logo" src="images/project-plan.png" alt="Logo for Site Plan">
-            <div>
-                <h1>The Chamber of Commerce Site Plan</h1>
-                <h2>JV Rabang</h2>
-                <h2>WDD230 - Web Frontend Development</h2>
-            </div>
-        </header>
-        <div class="tab-container">
-            <ul class="tabs">
-            <a src="site-name" class="active">Site Name</a>
-            <a src="site-purpose">Site Purpose</a>
-            <a src="scenarios">Scenarios</a>
-            <a src="color-schema">Color Schema</a>
-            <a src="typography">Typography</a>
-            <a src="wireframe">Wireframe</a>
-            </ul>
-            <div class="tab-content">
-            <div id="site-name">
-                <h3 class="top">Vigan Chamber of Commerce</h3>
-                <p>
-                    The site name explicitly includes the word "Vigan" to signify the local focus 
-                    and geographical relevance of the Chamber of Commerce. This name is chosen to 
-                    represent the specific locale of Vigan, a city known for its historical and 
-                    cultural significance.
-                </p>
-            </div>
-            <div id="site-purpose">
-                <ol>
-                    <li>
-                        <p class="top"><span class="bold">Business Directory and Support:</span></p>
-                        <ul>
-                            <li>Provide a comprehensive business directory for local businesses in Vigan.</li>
-                            <li>Offer support services, information on permits, and business resources for entrepreneurs in the region.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="bold">Cultural and Tourism Promotion:</p>
-                        <ul>
-                            <li>Showcase Vigan's cultural heritage, events, and attractions to promote tourism and local businesses.</li>
-                            <li>Collaborate with local businesses to enhance the overall cultural and economic development of Vigan.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-            <div id="scenarios">
-                <ol>
-                    <li>
-                        <p class="top"><span class="bold">Scenario 1 - Business Registration Assistance</span></p>
-                        <ul>
-                            <li><span class="bold">Visitor Question:</span> How can I register my business in Vigan?</li>
-                            <li><span class="bold">Website Content:</span> Step-by-step guide on business registration in Vigan, 
-                                including necessary forms, fees, and contact information.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="bold">Scenario 2 - Cultural Events Calendar:</p>
-                        <ul>
-                            <li><span class="bold">Visitor Question:</span> What cultural events are happening in Vigan this month?</li>
-                            <li><span class="bold">Website Content:</span> An events calendar highlighting local festivals, cultural exhibitions, 
-                                and other events that contribute to Vigan's rich heritage.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="bold">Scenario 3 - Tourism Information</p>
-                        <ul>
-                            <li><span class="bold">Visitor Question:</span> Tell me more about Vigan's tourist attractions 
-                                and recommended local businesses.</li>
-                            <li><span class="bold">Website Content:</span> Detailed information on Vigan's tourist spots, 
-                                historical sites, and a curated list of businesses for visitors.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-            <div id="color-schema">
-                    <p class="top">Palette URL: <a href="https://coolors.co/29363b-723e48-f5f5dc-ffffff" target="_blank">https://coolors.co/29363b-723e48-f5f5dc-ffffff</a></p>
-
-                    <table class="colors">
-                    <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
-                    <tr><td class="primary">#29363B</td><td class="secondary">#723E48</td><td class="accent1">#F5F5DC</td><td class="accent2">#FFFFFF</td></tr>
-                    </table>
-            </div>
-            <div id="typography">
-                <h3 class="top">Heading Font: <span id="montserrat">Montserrat</span></h3>
-                <h3>Paragraph Font: <span id="opensans">Open Sans</span></h3>
-                <h3>
-                    Normal paragraph example
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <h3>
-                    Colored paragraph example
-                </h3>
-                <p class="colored">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-            </div>
-            <div id="wireframe">
-                <h3 class="top">Home - Larger Viewport</h3>
-                <img src="images/homepage-large.png" alt="Wireframe for Home Page - Larger Viewport">
-                <h3>Home - Mobile Viewport</h3>
-                <img class="mobile" src="images/homepage-mobile.png" alt="Wireframe for Home Page - Mobile Viewport">
-            </div>
-            </div>
+    <header>
+        <img id="logo" src="images/project-plan.png" alt="Logo for Site Plan">
+        <div>
+            <h1>The Chamber of Commerce Site Plan</h1>
+            <h2>JV Rabang</h2>
+            <h2>WDD230 - Web Frontend Development</h2>
         </div>
+    </header>
+    <section>
+        <h2 class="collapsible">Site Name</h2>
+        <div class="contents">
+        <h3 class="top">Vigan Chamber of Commerce</h3>
+        <p>
+            The site name explicitly includes the word "Vigan" to signify the local focus 
+            and geographical relevance of the Chamber of Commerce. This name is chosen to 
+            represent the specific locale of Vigan, a city known for its historical and 
+            cultural significance.
+        </p>
+        </div>
+    </section>
+    <section>
+        <h2 class="collapsible">Site Purpose</h2>
+        <div class="contents">
+        <ol>
+            <li>
+                <p class="top"><span class="bold">Business Directory and Support:</span></p>
+                <ul>
+                    <li>Provide a comprehensive business directory for local businesses in Vigan.</li>
+                    <li>Offer support services, information on permits, and business resources for entrepreneurs in the region.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="bold">Cultural and Tourism Promotion:</p>
+                <ul>
+                    <li>Showcase Vigan's cultural heritage, events, and attractions to promote tourism and local businesses.</li>
+                    <li>Collaborate with local businesses to enhance the overall cultural and economic development of Vigan.</li>
+                </ul>
+            </li>
+        </ol>
+        </div>
+    </section>
+    <section>
+        <h2 class="collapsible">Scenarios</h2>
+        <div class="contents">
+        <ol>
+            <li>
+                <p class="top"><span class="bold">Scenario 1 - Business Registration Assistance</span></p>
+                <ul>
+                    <li><span class="bold">Visitor Question:</span> How can I register my business in Vigan?</li>
+                    <li><span class="bold">Website Content:</span> Step-by-step guide on business registration in Vigan, 
+                        including necessary forms, fees, and contact information.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="bold">Scenario 2 - Cultural Events Calendar:</p>
+                <ul>
+                    <li><span class="bold">Visitor Question:</span> What cultural events are happening in Vigan this month?</li>
+                    <li><span class="bold">Website Content:</span> An events calendar highlighting local festivals, cultural exhibitions, 
+                        and other events that contribute to Vigan's rich heritage.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="bold">Scenario 3 - Tourism Information</p>
+                <ul>
+                    <li><span class="bold">Visitor Question:</span> Tell me more about Vigan's tourist attractions 
+                        and recommended local businesses.</li>
+                    <li><span class="bold">Website Content:</span> Detailed information on Vigan's tourist spots, 
+                        historical sites, and a curated list of businesses for visitors.</li>
+                </ul>
+            </li>
+        </ol>
+        </div>
+    </section>
+    <section>
+        <h2 class="collapsible">Color Schema</h2>
+        <div class="contents">
+        <p class="top">Palette URL: <a href="https://coolors.co/29363b-723e48-f5f5dc-ffffff" target="_blank">https://coolors.co/29363b-723e48-f5f5dc-ffffff</a></p>
+
+        <table class="colors">
+          <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
+          <tr><td class="primary">#29363B</td><td class="secondary">#723E48</td><td class="accent1">#F5F5DC</td><td class="accent2">#FFFFFF</td></tr>
+        </table>
+        </div>
+    </section>
+    <section>
+        <h2 class="collapsible">Typography</h2>
+        <div class="contents">
+        <h3 class="top">Heading Font: <span id="montserrat">Montserrat</span></h3>
+        <h3>Paragraph Font: <span id="opensans">Open Sans</span></h3>
+        <h3>
+        Normal paragraph example
+        </h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3>
+        Colored paragraph example
+        </h3>
+        <p class="colored">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+        </div>
+    </section>
+    <section>
+        <h2 class="collapsible">Wireframe</h2>
+        <div class="contents">
+        <h3 class="top">Home - Larger Viewport</h3>
+        <img src="images/homepage-large.png" alt="Wireframe for Home Page - Larger Viewport">
+        <h3>Home - Mobile Viewport</h3>
+        <img class="mobile" src="images/homepage-mobile.png" alt="Wireframe for Home Page - Mobile Viewport">
+        </div>
+    </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="scripts/tab.js"></script>
 </body>
 </html>
