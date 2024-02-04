@@ -24,4 +24,24 @@
     #menu {
         display: none;
     }
+
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+    
+    #hero-section {
+        grid-column: 1/3;
+        margin-bottom: 2rem;
+    }
+    
+    #current-events-section {
+        grid-column: 1/2;
+    }
+    
+    #current-weather-section {
+        grid-column: 2/3;
+    }
+
 }

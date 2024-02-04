@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
 }
 
-body p, body li {
+body p, body li, button {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
@@ -149,4 +149,56 @@ header h1 {
 
 .show li {
     display: block;
+}
+
+#current-events-section img {
+    width: 160px;
+    float: left;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+#weather-widget {
+    margin-top: -20px;
+}
+
+body main section button {
+    margin: 1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding: .8rem;
+}
+
+section img {
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: -1;
+}
+
+section:not(#current-events-section) p{
+    margin-top: -200px;
+    position: relative;
+    z-index: 2;
+    color: #fafafa;
+    font-weight: lighter;
+}
+
+section:not(#current-events-section) button{
+    position: relative;
+    z-index: 2;
+}
+
+.content-box {
+    padding: 1rem;
+    height: 200px;
+    width: 100%;
+    background-color: #723e48e4;
+    position: relative;
+    z-index: 1;
+    margin-top: -240px;
+    margin-bottom: 0px;
 }
