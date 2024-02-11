@@ -20,6 +20,8 @@ button.addEventListener("click", () => {
             input.focus();
         });
 
+        input.focus();
+
         input.value = "";
     } else {
         alert("Please enter your Top 10 Chapter");
