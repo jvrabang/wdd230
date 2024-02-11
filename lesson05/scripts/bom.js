@@ -16,15 +16,18 @@ button.addEventListener("click", () => {
         list.append(li);
     
         deleteButton.addEventListener("click", function () {
+            var deletedItemText = li.textContent.replace('❌', '');
             list.removeChild(li);
             input.focus();
+            alert(deletedItemText + " has been removed from the list.");
         });
+        
 
         input.focus();
 
         input.value = "";
     } else {
-        alert("Please enter your Top 10 Chapter");
+        alert("Please enter your Top 10 Chapter.");
 
         input.focus();
 
