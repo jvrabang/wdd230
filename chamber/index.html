@@ -15,27 +15,33 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
-        <img src="images/vigan-kalesa.png" alt="Vigan Kalesa">
-        <h1>Vigan Chamber of Commerce</h1>
+        <a href="index.html"><img id="page-logo" src="images/header-img-light.png" alt="Vigan Kalesa"></a>
     </header>
     <button id="menu"></button>
     <nav>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Discovery</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li class="hover-underline-animation"><a href="#">Home</a></li>
+            <li class="hover-underline-animation"><a href="#">Discovery</a></li>
+            <li class="hover-underline-animation"><a href="#">Directory</a></li>
+            <li class="hover-underline-animation"><a href="#">Join</a></li>
         </ul>
     </nav>
     <main>
         <div id="hero-section">
-            <img id="hero-img" src="images/hero-img.JPG" alt="Calle Crisologo in Vigan City">
+            <img id="hero-img" src="images/hero-img-light.JPG" alt="Calle Crisologo in Vigan City">
             <div id="hero-button-container">
                 <button id="hero-button">Join Now!</button>
+            </div>
+            <div class="switch">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
             </div>
         </div>
         <section id="current-events-section">
@@ -99,5 +105,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger-button.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
