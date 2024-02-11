@@ -161,10 +161,8 @@ header h1, header img {
     vertical-align: middle;
 }
 
-header h1 {
-    margin-left: 1rem;
-    width: 50%;
-    font-size: 1.5rem;
+body header h1 {
+    display: none;
 }
 
 #menu {
