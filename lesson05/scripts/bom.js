@@ -22,14 +22,14 @@ button.addEventListener("click", () => {
             alert(deletedItemText + " has been removed from the list.");
         });
         
-
         input.focus();
-
         input.value = "";
+        
     } else {
         alert("Please enter your Top 10 Chapter.");
 
         input.focus();
+        input.value = "";
 
         return;
     }
