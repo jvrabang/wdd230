@@ -6,10 +6,9 @@ if (currentTheme) {
   
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
-        document.getElementById('hero-img').src = 'images/hero-img-dark.jpg'; // Set dark mode hero image initially
+        document.getElementById('hero-img').src = 'images/hero-img-dark.jpg'; 
     }
 }
-
 function switchTheme(e) {
     const heroImg = document.getElementById('hero-img');
     if (e.target.checked) {
