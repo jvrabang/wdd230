@@ -16,7 +16,7 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'dark');
         heroImg.style.opacity = 0; 
         setTimeout(() => {
-            heroImg.src = 'images/hero-img-dark.jpg';
+            heroImg.src = 'images/hero-img-dark1.jpg';
             heroImg.style.opacity = 1; 
         }, 500); 
     } else {
@@ -24,7 +24,7 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'light');
         heroImg.style.opacity = 0; 
         setTimeout(() => {
-            heroImg.src = 'images/hero-img-light.jpg'; 
+            heroImg.src = 'images/hero-img-light1.jpg'; 
             heroImg.style.opacity = 1; 
         }, 500); 
     }    
