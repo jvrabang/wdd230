@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Open+Sans&display=swap');
-/* 
-* {
+
+/* * {
     border: 1px solid blue;
 } */
 
@@ -32,7 +32,7 @@ html {
     --border-color: #48555D;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, label, input {
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -42,11 +42,8 @@ body p, body li, button {
 }
 
 #hero-img {
-    height: 100%;
+    display: block;
     width: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease; 
-    opacity: 1; 
 }
 
 
@@ -203,7 +200,7 @@ body header h1 {
     margin-top: -20px;
 }
 
-body main section button {
+.ads button {
     margin: 1rem;
     display: block;
     margin: 0 auto;
@@ -221,7 +218,7 @@ section img {
     z-index: -1;
 }
 
-section:not(#current-events-section) p{
+.ads p{
     margin-top: -200px;
     position: relative;
     z-index: 2;
@@ -229,7 +226,7 @@ section:not(#current-events-section) p{
     font-weight: lighter;
 }
 
-section:not(#current-events-section) button{
+.ads button{
     position: relative;
     z-index: 2;
 }
@@ -247,7 +244,9 @@ section:not(#current-events-section) button{
 
 #hero-section {
     position: relative;
-    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+    /* height: 85vh; */
 }
 
 .switch {
@@ -313,4 +312,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#current-weather-section label, #current-weather-section button,#current-weather-section input {
+    margin: .5rem;
+}
+
+#current-weather-section input {
+    width: 80;
 }
