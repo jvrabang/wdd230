@@ -332,7 +332,3 @@ input:checked + .slider:before {
 #current-weather-section button {
     margin: .5rem;
 }
-
-#current-weather-section input {
-    width: 80;
-}
