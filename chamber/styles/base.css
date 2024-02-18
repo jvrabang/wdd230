@@ -20,6 +20,7 @@ html {
     --section-header-color: #383d3f;
     --header-text-color: #fafafa;
     --border-color: #29363b;
+    --button-color: #efefef;
 }
 
 [data-theme="dark"] {
@@ -30,15 +31,25 @@ html {
     --section-header-color: #48555D;
     --header-text-color: #fafafa;
     --border-color: #48555D;
+    --button-color: #48555D;
 }
 
-h1, h2, h3, h4, h5, label, input {
+h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
 }
 
-body p, body li, button {
+body p, body li, button, label, input {
     font-family: 'Open Sans', Helvetica, sans-serif;
     color: var(--font-color);
+}
+
+input {
+    color: black;
+}
+
+button {
+    color: var(--font-color);
+    background-color: var(--button-color);
 }
 
 #hero-img {
@@ -314,7 +325,11 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#current-weather-section label, #current-weather-section button,#current-weather-section input {
+#current-weather-section label,#current-weather-section input {
+    margin: .5rem;
+}
+
+#current-weather-section button {
     margin: .5rem;
 }
 
