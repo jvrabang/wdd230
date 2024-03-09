@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 0px;
+    max-width: 960px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color:  #29363B;
+    text-align: center;
+    padding: .5rem;
+    max-width: 960px;
+}
+
+header h1 {
+    color: aliceblue;
+}
+
+
+footer {
+    background-color:  #29363B;
+    text-align: center;
+    color: #fafafa;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    padding: .5rem;
+    margin: 0;
+}
