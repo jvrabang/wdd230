@@ -389,7 +389,6 @@ input:checked + .slider:before {
     opacity: 90%;
 }
 
-<<<<<<< HEAD
 .solid-line {
     border: 0;
     height: 1px;
@@ -398,6 +397,4 @@ input:checked + .slider:before {
     margin-right: 1rem; 
   }
 
-=======
->>>>>>> 26d832197794cb195c34c4de4188dabc48061670
 
