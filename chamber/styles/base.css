@@ -125,7 +125,7 @@ header {
 }
 
 
-main > section:not(:first-child) {
+.home > section:not(:first-child) {
     margin: 1em;
     border: 1px solid;
     border-color: var(--border-color);
@@ -133,6 +133,7 @@ main > section:not(:first-child) {
     margin: 1rem;
     overflow: hidden;
 }
+
 
 main h2 {
     text-align: center;
@@ -152,8 +153,9 @@ footer {
     padding-bottom: 0;
 }
 
-main section p {
-    padding: 1rem;
+main section p, main section h3{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 footer p {
@@ -223,7 +225,7 @@ body header h1 {
     color: #0f0f0f;
 }
 
-section img {
+.home section img {
     width: 100%;
     margin-top: -20px;
     margin-bottom: -10px;
@@ -259,7 +261,7 @@ section img {
     position: relative;
     width: 100%;
     overflow: hidden;
-    /* height: 85vh; */
+    height: 85vh;
 }
 
 .switch {
@@ -334,3 +336,65 @@ input:checked + .slider:before {
 #current-weather-section button {
     margin: .5rem;
 }
+
+#discover-contents > section {
+    margin: 1em;
+    border: 1px solid;
+    border-color: var(--border-color);
+    border-radius: 10px;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+
+#rightbar img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 94%;
+}
+
+#leftbar section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#leftbar img {
+    height: 100px;
+    padding-left: 1rem;
+    transition: transform 0.3s ease;
+}
+
+#leftbar img:hover {
+    transform: scale(1.1); 
+}
+
+.left {
+    text-align: left;
+}
+
+#hero-button-container-box h2, #hero-button-container-box p {
+    background-color: transparent;
+    padding: 1rem;
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: 0;
+}
+
+#hero-button-container-box {
+    background-color: #29363b;
+    border-radius: 1rem;
+    opacity: 90%;
+}
+
+.solid-line {
+    border: 0;
+    height: 1px;
+    background-color: #383d3f; 
+    margin-left: 1rem;
+    margin-right: 1rem; 
+  }
+
+
