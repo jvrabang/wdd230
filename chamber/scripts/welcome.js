@@ -1,4 +1,4 @@
-const lastVisit = localStorage.getItem('lastVisit');
+let lastVisit = localStorage.getItem('lastVisit');
 const currentDate = Date.now();
 localStorage.setItem('lastVisit', currentDate);
 
