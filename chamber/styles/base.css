@@ -346,7 +346,6 @@ input:checked + .slider:before {
     overflow: hidden;
 }
 
-
 #rightbar img {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -373,6 +372,9 @@ input:checked + .slider:before {
 
 .left {
     text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 0;
 }
 
 #hero-button-container-box h2, #hero-button-container-box p {
@@ -381,6 +383,11 @@ input:checked + .slider:before {
     color: white;
     padding-top: .5rem;
     padding-bottom: 0;
+}
+
+.discover li {
+    list-style: none;
+    padding: .5rem;
 }
 
 #hero-button-container-box {
