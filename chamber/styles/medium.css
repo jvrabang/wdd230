@@ -44,4 +44,41 @@
         grid-column: 2/3;
     }
 
+    #discover-contents {
+        display: grid;
+        grid-template-columns: 20rem auto;
+    }
+
+    #leftbar {
+        grid-column: 1/2;
+    }
+
+    #rightbar {
+        grid-column: 2/3;
+    }
+
+    #rightbar img {
+        width: 95%;
+    }
+
+    #leftbar {
+<<<<<<< HEAD
+        max-height: 61rem;
+=======
+        max-height: 55rem;
+>>>>>>> 26d832197794cb195c34c4de4188dabc48061670
+        min-width: 280px;
+    }
+    
+    #rightbar {
+        max-width: 1000px;
+    }
+
+    #discover-contents {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+
 }
