@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon_small.ico">
 </head>
 <body>
     <header>
@@ -31,24 +31,79 @@
             <li class="hover-underline-animation"><a href="#">Join</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="discover">
         <div id="hero-section">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 460px)">
-                <source srcset="images/hero-medium.webp" media="(max-width: 650px)">
-                <source srcset="images/hero-large.webp" media="(max-width: 1025px)">
-                <img id="hero-img" src="images/hero-large.webp" alt="Hero Image">
-            </picture >
+            <img id="hero-img" src="images/hero-img-light1.webp" alt="Calle Crisologo in Vigan City">
             
             <div id="hero-button-container">
-                <button id="hero-button">Discover Vigan!</button>
+                <div id="hero-button-container-box">
+                    <h2>Welcome!</h2>
+                    <p id="welcome-message">Let us know if you have any questions.</p>
+                </div>
             </div>
-            <div class="switch">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
+        </div>
+        <div id="discover-contents">
+            <section id="leftbar">
+                <h2>Quick Links</h2>
+                <section>
+                <h3>Tourist Spots Map</h3>
+                <a href="http://vigancity.gov.ph/vgmap/" target="_blank">
+                    <img src="images/map.png" alt="Vigan Map">
+                </a>
+                </section>
+                <section>
+                    <h3>Local Eats</h3>
+                    <a href="http://vigancity.gov.ph/tourism/local-eats/" target="_blank">
+                        <img src="images/hot-pot.png" alt="Local Eats">
+                    </a>
+                </section>
+                <section>
+                    <h3>Vigan City Hotlines</h3>
+                    <img src="images/emergency-call.png" alt="Hotlines">
+                    <ul class="left">
+                        <p><strong>Fire Station:</strong> 1600 & 722-0990</p>
+                        <p><strong>Police:</strong> 166 & 722-0890</p>
+                        <p><strong>Public Safety:</strong> 711</p>
+                        <p><strong>Health Office:</strong> 722-6785</p>
+                        <p><strong>Gabriela Silang Hospital:</strong> 722-3362 & 722-2781</p>
+                        <p><strong>ISECO:</strong> 722-2085 & 0917-5793-517</p>
+                        <p><strong>Mayor's Office:</strong> 722-2466</p>
+                    </ul>
+                    </a>
+                </section>
+            </section>
+            <section id="rightbar">
+                <h2>What To Do in Vigan?</h2>
+                <h3>1. Walk Through Calle Crisologo: Immerse Yourself in History</h3>
+                <img class="hover-img" src="images/vigan-calle-crisologo.webp" alt="Vigan Calle Crisologo" loading="eager">
+                <p>Experience the timeless beauty of Vigan by taking a leisurely stroll along Calle Crisologo, a UNESCO World Heritage Site. Admire the well-preserved Spanish colonial architecture, shop for local crafts and souvenirs, and indulge in authentic Ilocano cuisine at the quaint cafes and restaurants lining the cobblestone streets.</p>
+                <p>Budget: $5-10 USD</p>
+
+                <h3>2. Visit the Crisologo Museum: Delve into the City's Rich Heritage</h3>
+                <img class="hover-img" src="images/vigan-crisologo-museum.webp" alt="Vigan Crisologo Museum" loading="lazy">
+                <p>Explore the Crisologo Museum, located within the ancestral home of the prominent Crisologo family. Discover artifacts, heirlooms, and memorabilia that offer insights into the history and culture of Vigan. From antique furniture to vintage photographs, this museum provides a captivating journey through the city's past.</p>
+                <p>Budget: $2-4 USD</p>
+
+                <h3>3. Ride a Kalesa: Experience Nostalgic Transportation</h3>
+                <img class="hover-img" src="images/vigan-kalesa.webp" alt="Vigan Kalesa" loading="lazy">
+                <p>Step back in time and take a traditional horse-drawn carriage ride, known locally as a kalesa, around Vigan's historic streets. Let the rhythmic clip-clop of the horse's hooves serenade you as you pass by colonial-era buildings, churches, and plazas. It's a charming way to explore the city and capture memorable photographs. </p>
+                <p>Budget: $5-10 USD per ride.</p>
+
+                <h3>4. Explore Baluarte: Encounter Wildlife in a Picturesque Setting</h3>
+                <img class="hover-img" src="images/vigan-baluarte.webp" alt="Vigan Baluarte" loading="lazy">
+                <p>Spend a day at Baluarte, a sprawling estate owned by former governor Chavit Singson. Home to a mini zoo featuring various species of animals, including tigers, deer, birds, and reptiles, Baluarte offers visitors the opportunity to interact with wildlife amidst lush greenery and scenic landscapes. Admission to Baluarte is free, but donations are welcome.</p>
+                <p>Budget: $0-5 USD.</p>
+
+                <h3>5. Try Traditional Ilocano Cuisine: Indulge Your Taste Buds</h3>
+                <img class="hover-img" src="images/vigan-food.webp" alt="Vigan Cuisine" loading="lazy">
+                <p>Sample authentic Ilocano dishes at local eateries and restaurants scattered throughout Vigan. From empanada, a savory pastry filled with meat and vegetables, to bagnet, crispy deep-fried pork belly, and pinakbet, a flavorful vegetable stew, Vigan's culinary scene promises a gastronomic adventure that celebrates the region's unique flavors. </p>
+                <p>Budget: $3-8 USD per meal.</p>
+
+                <h3>6. Witness the Dancing Fountain at Plaza Salcedo: Evening Spectacle</h3>
+                <img class="hover-img" src="images/vigan-dancing-fountain.webp" alt="Vigan Dancing Fountain" loading="lazy">
+                <p>As the sun sets, head to Plaza Salcedo and marvel at the mesmerizing Dancing Fountain show. Set against the backdrop of the historic Plaza Salcedo and illuminated by colorful lights, the fountain comes to life with synchronized water, music, and light displays, creating a magical atmosphere that captivates audiences of all ages. Best of all, it's free for everyone to enjoy. </p>
+                <p>Budget: $0 USD.</p>
+            </section>
         </div>
         
     </main>
@@ -59,7 +114,5 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger-button.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
 </html>

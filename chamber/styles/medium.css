@@ -26,7 +26,7 @@
     } */
 
     
-    main {
+    .home {
         display: grid;
         grid-template-columns: repeat(2, 1fr)
     }
@@ -43,5 +43,38 @@
     #current-weather-section {
         grid-column: 2/3;
     }
+
+    #discover-contents {
+        display: grid;
+        grid-template-columns: 20rem auto;
+    }
+
+    #leftbar {
+        grid-column: 1/2;
+    }
+
+    #rightbar {
+        grid-column: 2/3;
+    }
+
+    #rightbar img {
+        width: 95%;
+    }
+
+    #leftbar {
+        max-height: 55rem;
+        min-width: 280px;
+    }
+    
+    #rightbar {
+        max-width: 1000px;
+    }
+
+    #discover-contents {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
 
 }

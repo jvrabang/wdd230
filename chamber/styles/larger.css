@@ -33,7 +33,7 @@
         vertical-align: middle;
     }
 
-    main {
+    .home {
         display: grid;
         grid-template-columns: repeat(3, 1fr)
     }
@@ -67,22 +67,59 @@
         color: #f3eae6;
       }
       
-      .hover-underline-animation::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #f3eae6;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-      }
-      
-      .hover-underline-animation:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
+    .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f3eae6;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
+    #discover-contents {
+        display: grid;
+        grid-template-columns: 20rem auto;
+    }
+
+    #leftbar {
+        grid-column: 1/2;
+    }
+
+    #rightbar {
+        grid-column: 2/3;
+    }
+
+    #rightbar img {
+    width: 95%;
+    }
+
+    #leftbar {
+        max-height: 55rem;
+        min-width: 280px;
+    }
+    
+    #rightbar {
+        max-width: 1000px;
+    }
+
+    #discover-contents {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .discover .hover-img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    
 
 }
