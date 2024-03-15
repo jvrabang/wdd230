@@ -49,15 +49,14 @@
             </div>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$"
-                       title="A valid byui.edu email address.">
+                <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
             </div>
             <div>
                 <label for="r">Page Rating:</label>
                 <input type="range" id="r" name="page_rating" min="1" max="10" step="1" value="5">
                 <output for="r" id="range_value">5</output>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" value="Validate">Submit</button>
         </form>
     </main>
     <footer>
