@@ -69,7 +69,7 @@ nav {
     display: block;
 }
 
-main {
+main .index {
     margin: auto;
     display: grid;
     grid-template: auto / auto

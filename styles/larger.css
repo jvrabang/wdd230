@@ -15,7 +15,7 @@
         padding: 1.25rem;
     }
 
-    main {
+    main .index {
         display: grid;
         grid-template-columns: 1fr 40%;
     }
