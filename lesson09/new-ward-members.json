@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+    "familyName": "Tab",
+    "moveInDate": "2023-01-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Tab Marcelo",
+            "gender": "Male",
+            "birthdate": "1980-03-12"
+        },
+        {
+            "name": "Alice Marcelo",
+            "gender": "Female",
+            "birthdate": "1982-10-23"
+        },
+        {
+            "name": "Tommy Marcelo",
+            "gender": "Male",
+            "birthdate": "2005-11-07"
+        },
+        {
+            "name": "Andrea Marcelo",
+            "gender": "Female",
+            "birthdate": "2012-12-18"
+        }
+    ]
+    }
+}
