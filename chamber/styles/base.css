@@ -431,13 +431,11 @@ input:checked + .slider:before {
     padding-bottom: 10px;
 }
 
-/* Form container */
 #leftbar form {
     max-width: 400px;
     margin: 0 auto;
 }
 
-/* Form elements */
 #leftbar form label {
     display: block;
     margin-bottom: 10px;
@@ -456,7 +454,6 @@ input:checked + .slider:before {
     box-sizing: border-box;
 }
 
-/* Form submission button */
 #leftbar form button[type="submit"] {
     background-color: #383d3f;
     color: #fff;
@@ -467,13 +464,18 @@ input:checked + .slider:before {
     font-size: 16px;
 }
 
+#leftbar #description {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: var(--font-color);
+}
+
 #leftbar form button[type="submit"]:hover {
     background-color: #7e553d;
 }
 
 #leftbar form textarea {
     resize: none;
-    height: 150px;
+    height: 70px;
 }
 
 .thankyou-box {
@@ -505,4 +507,8 @@ footer {
     max-width: 100%; /* Ensure the image does not exceed the container width */
     height: auto; /* Maintain aspect ratio */
     margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+.join h3 {
+    padding-left: 0;
 }
