@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
 }
 
-body p, body li, button, label, input, select {
+body p, body li, button, label, input, select, td, th{
     font-family: 'Open Sans', Helvetica, sans-serif;
     color: var(--font-color);
 }
@@ -555,8 +555,112 @@ footer {
   color: rgb(255, 255, 255, .7);
 }
 
-.button-18:disabled { 
+#hero-button:disabled { 
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.list-view {
+    display: block;
+}
+
+#memberContainer img {
+    max-width: 300px;
+    max-height: 50px;
+}
+
+#memberContainer h2 {
+    min-height: 4rem;
+}
+
+.member {
+    margin: 1em;
+    border: 1px solid;
+    border-color: var(--border-color);
+    border-radius: 10px;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.member p, .member img {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Table styling */
+.member-table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 1rem;
+}
+
+.member-table th,
+.member-table td {
+    padding: 8px;
+    border: 1px solid #29363b;
+}
+
+/* Header styling */
+.member-table th {
+    background-color: #29363b; /* Header color */
+    color: white; /* Font color */
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.discover-button {
+    align-items: center;
+    background-color: #29363b;
+    border: 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+  
+.discover-button:hover,
+.discover-button:focus { 
+    background-color: #723e48;
+    color: #ffffff;
+}
+  
+.discover-button:active {
+    background: #723e48;
+    color: rgb(255, 255, 255, .7);
+}
+  
+.discover-button:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
 }
