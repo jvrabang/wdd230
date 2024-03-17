@@ -5,23 +5,21 @@ async function getLinks() {
   try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data);
+    displayLinks(data.lessons);
   } catch (error) {
     console.error('Error fetching links:', error);
   }
 }
 
-function displayLinks(weeks) {
+function displayLinks(lessons) {
   const activitiesList = document.querySelector('.card ul');
   activitiesList.innerHTML = ''; // Clear existing list
   
-  weeks.forEach(week => {
-    const { lesson, links } = week;
-    
+  lessons.forEach(lesson => {
     const listItem = document.createElement('li');
-    listItem.textContent = `${lesson}: `;
+    listItem.textContent = `${lesson.lesson}: `;
     
-    links.forEach(link => {
+    lesson.links.forEach(link => {
       const linkElement = document.createElement('a');
       linkElement.href = `${baseURL}${link.url}`;
       linkElement.textContent = link.title;
