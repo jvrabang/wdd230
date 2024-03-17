@@ -30,20 +30,16 @@
         "lesson": "03",
         "links": [
           {
-            "url": "lesson03/chamber-site-plan.html",
-            "title": "Site Plan"
+            "url": "images/css-combinators-activity.png",
+            "title": "CSS Combinators"
           },
           {
-            "url": "chamber/",
-            "title": "Chamber"
+            "url": "https://codepen.io/jvrabang/pen/dyrVvvy",
+            "title": "CSS Pseudo Elements"
           },
           {
-            "url": "https://www.byui.edu/",
-            "title": "BYU-Idaho"
-          },
-          {
-            "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p2#p2",
-            "title": "Scriptures"
+            "url": "https://codepen.io/jvrabang/pen/oNVGZPj?editors=0110",
+            "title": "Responsive Menu"
           }
         ]
       },
