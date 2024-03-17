@@ -1,66 +1,66 @@
 [
     {
-      "name": "Company A",
-      "address": "123 Main Street, City, Country",
-      "phone": "+1234567890",
-      "website": "https://www.companya.com",
-      "image": "companya.jpg",
+      "name": "SM Prime Holdings, Inc.",
+      "address": "SM Central Business Park, Bay City, Pasay, Metro Manila, Philippines",
+      "phone": "+63 2 8867 6868",
+      "website": "https://www.smprime.com",
+      "image": "sm-prime-holdings.jpg",
       "membership_level": "Gold",
-      "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "other_information": "SM Prime Holdings, Inc. (SMPH) is one of the largest integrated property developers in Southeast Asia. It offers innovative and sustainable lifestyle cities."
     },
     {
-      "name": "Company B",
-      "address": "456 Elm Street, City, Country",
-      "phone": "+1234567891",
-      "website": "https://www.companyb.com",
-      "image": "companyb.jpg",
+      "name": "Ayala Corporation",
+      "address": "Ayala Avenue, Makati, Metro Manila, Philippines",
+      "phone": "+63 2 8818 5541",
+      "website": "https://www.ayala.com",
+      "image": "ayala-corporation.jpg",
       "membership_level": "Silver",
-      "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "other_information": "Ayala Corporation is one of the oldest and largest conglomerates in the Philippines. It operates in real estate, telecommunications, water, and financial services."
     },
     {
-      "name": "Company C",
-      "address": "789 Oak Street, City, Country",
-      "phone": "+1234567892",
-      "website": "https://www.companyc.com",
-      "image": "companyc.jpg",
+      "name": "Jollibee Foods Corporation",
+      "address": "10th Floor, Jollibee Plaza, F. Ortigas Jr. Road, Ortigas Center, Pasig, Metro Manila, Philippines",
+      "phone": "+63 2 8987 1111",
+      "website": "https://www.jollibee.com.ph",
+      "image": "jollibee-foods.jpg",
       "membership_level": "Bronze",
-      "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "other_information": "Jollibee Foods Corporation is a Filipino multinational chain of fast food restaurants. It is the largest fast-food chain in the Philippines."
     },
     {
-      "name": "Company D",
-      "address": "1011 Pine Street, City, Country",
-      "phone": "+1234567893",
-      "website": "https://www.companyd.com",
-      "image": "companyd.jpg",
+      "name": "San Miguel Corporation",
+      "address": "40 San Miguel Avenue, Mandaluyong, Metro Manila, Philippines",
+      "phone": "+63 2 8840 3123",
+      "website": "https://www.sanmiguel.com.ph",
+      "image": "san-miguel.jpg",
       "membership_level": "NP",
-      "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "other_information": "San Miguel Corporation is a Filipino multinational publicly listed conglomerate holding company. It is the Philippines' largest corporation in terms of revenue."
     },
     {
-      "name": "Company E",
-      "address": "1213 Maple Street, City, Country",
-      "phone": "+1234567894",
-      "website": "https://www.companye.com",
-      "image": "companye.jpg",
+      "name": "SM Investments Corporation",
+      "address": "SM Central Business Park, Bay City, Pasay, Metro Manila, Philippines",
+      "phone": "+63 2 8867 8338",
+      "website": "https://www.sminvestments.com",
+      "image": "sm-investments.jpg",
       "membership_level": "Gold",
-      "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "other_information": "SM Investments Corporation is a holding company with interests in shopping mall development and management, retail, real estate development, banking, and tourism."
     },
     {
-      "name": "Company F",
-      "address": "1415 Birch Street, City, Country",
-      "phone": "+1234567895",
-      "website": "https://www.companyf.com",
-      "image": "companyf.jpg",
+      "name": "BDO Unibank, Inc.",
+      "address": "7899 Makati Avenue, Makati, Metro Manila, Philippines",
+      "phone": "+63 2 8840 7000",
+      "website": "https://www.bdo.com.ph",
+      "image": "bdo-unibank.jpg",
       "membership_level": "Silver",
-      "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "other_information": "BDO Unibank, Inc. (BDO) is a Philippine banking company based in Makati. It is a member of the SM Group."
     },
     {
-      "name": "Company G",
-      "address": "1617 Cedar Street, City, Country",
-      "phone": "+1234567896",
-      "website": "https://www.companyg.com",
-      "image": "companyg.jpg",
+      "name": "Philippine Long Distance Telephone Company (PLDT)",
+      "address": "Ramon Cojuangco Building, Makati Avenue, Makati, Metro Manila, Philippines",
+      "phone": "+63 2 8888 1710",
+      "website": "https://www.pldt.com",
+      "image": "pldt.jpg",
       "membership_level": "Bronze",
-      "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "other_information": "PLDT Inc. is the largest telecommunications and digital services company in the Philippines. It is also involved in broadcasting, publishing, and outsourced services."
     }
   ]
   
