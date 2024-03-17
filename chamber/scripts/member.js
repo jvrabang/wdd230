@@ -1,79 +1,43 @@
-// JavaScript code to fetch and display member information
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('https://jvrabang.github.io/wdd230/chamber/data/members.json')
+    .then(response => response.json())
+    .then(data => {
+        const memberContainer = document.getElementById('memberContainer');
+        data.forEach(member => {
+            const memberDiv = document.createElement('div');
+            memberDiv.classList.add('member');
 
-// Function to fetch member data from JSON
-async function fetchMemberData() {
-    try {
-        const response = await fetch('https://jvrabang.github.io/wdd230/chamber/data/members.json');
-        const data = await response.json();
-        return data.members;
-    } catch (error) {
-        console.error('Error fetching member data:', error);
-    }
-}
+            const name = document.createElement('h2');
+            name.textContent = member.name;
+            memberDiv.appendChild(name);
 
-// Function to create member cards
-function createMemberCard(member) {
-    const card = document.createElement('div');
-    card.classList.add('member-card');
+            const address = document.createElement('p');
+            address.textContent = "Address: " + member.address;
+            memberDiv.appendChild(address);
 
-    // Construct card content
-    const html = `
-        <img src="${member.image}" alt="${member.name}">
-        <h2>${member.name}</h2>
-        <p><strong>Address:</strong> ${member.address}</p>
-        <p><strong>Phone:</strong> ${member.phone}</p>
-        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-        <p><strong>Membership Level:</strong> ${member.membership}</p>
-        <!-- Add more member information here as needed -->
-    `;
+            const phone = document.createElement('p');
+            phone.textContent = "Phone: " + member.phone;
+            memberDiv.appendChild(phone);
 
-    card.innerHTML = html;
-    return card;
-}
+            const website = document.createElement('p');
+            website.innerHTML = "Website: <a href='" + member.website + "'>" + member.website + "</a>";
+            memberDiv.appendChild(website);
 
-// Function to display member cards in grid view
-function displayGrid(members) {
-    const memberContainer = document.getElementById('memberContainer');
-    memberContainer.innerHTML = '';
+            const image = document.createElement('img');
+            image.src = "images/" + member.image;
+            image.alt = member.name;
+            memberDiv.appendChild(image);
 
-    members.forEach(member => {
-        const card = createMemberCard(member);
-        memberContainer.appendChild(card);
-    });
-}
+            const membershipLevel = document.createElement('p');
+            membershipLevel.textContent = "Membership Level: " + member.membership_level;
+            memberDiv.appendChild(membershipLevel);
 
-// Function to display member cards in list view
-function displayList(members) {
-    const memberContainer = document.getElementById('memberContainer');
-    memberContainer.innerHTML = '';
+            const otherInformation = document.createElement('p');
+            otherInformation.textContent = "Other Information: " + member.other_information;
+            memberDiv.appendChild(otherInformation);
 
-    members.forEach(member => {
-        const card = createMemberCard(member);
-        card.classList.add('list-view');
-        memberContainer.appendChild(card);
-    });
-}
-
-// Function to initialize the directory page
-async function initializeDirectory() {
-    const members = await fetchMemberData();
-    displayGrid(members); // Default view is grid
-
-    // Event listener for view toggle button
-    const toggleButton = document.getElementById('toggle-view-button');
-    toggleButton.addEventListener('click', () => {
-        const listView = toggleButton.classList.contains('list-view');
-        if (listView) {
-            displayGrid(members);
-            toggleButton.classList.remove('list-view');
-            toggleButton.textContent = 'Switch to List View';
-        } else {
-            displayList(members);
-            toggleButton.classList.add('list-view');
-            toggleButton.textContent = 'Switch to Grid View';
-        }
-    });
-}
-
-// Initialize directory page
-initializeDirectory();
+            memberContainer.appendChild(memberDiv);
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
+});

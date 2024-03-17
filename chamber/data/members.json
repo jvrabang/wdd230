@@ -4,7 +4,7 @@
       "address": "SM Central Business Park, Bay City, Pasay, Metro Manila, Philippines",
       "phone": "+63 2 8867 6868",
       "website": "https://www.smprime.com",
-      "image": "sm-prime-holdings.jpg",
+      "image": "https://www.smprime.com/wp-content/uploads/2022/07/sm-prime-new-logo-mini-for-website.png",
       "membership_level": "Gold",
       "other_information": "SM Prime Holdings, Inc. (SMPH) is one of the largest integrated property developers in Southeast Asia. It offers innovative and sustainable lifestyle cities."
     },
@@ -13,7 +13,7 @@
       "address": "Ayala Avenue, Makati, Metro Manila, Philippines",
       "phone": "+63 2 8818 5541",
       "website": "https://www.ayala.com",
-      "image": "ayala-corporation.jpg",
+      "image": "https://ayala.com/app/themes/custom-theme/dist/images/logos/logo-colored.svg",
       "membership_level": "Silver",
       "other_information": "Ayala Corporation is one of the oldest and largest conglomerates in the Philippines. It operates in real estate, telecommunications, water, and financial services."
     },
@@ -22,7 +22,7 @@
       "address": "10th Floor, Jollibee Plaza, F. Ortigas Jr. Road, Ortigas Center, Pasig, Metro Manila, Philippines",
       "phone": "+63 2 8987 1111",
       "website": "https://www.jollibee.com.ph",
-      "image": "jollibee-foods.jpg",
+      "image": "https://queen.jollibee.com.ph/2022/02/jollibee-logo-footer-2x.png",
       "membership_level": "Bronze",
       "other_information": "Jollibee Foods Corporation is a Filipino multinational chain of fast food restaurants. It is the largest fast-food chain in the Philippines."
     },
@@ -31,7 +31,7 @@
       "address": "40 San Miguel Avenue, Mandaluyong, Metro Manila, Philippines",
       "phone": "+63 2 8840 3123",
       "website": "https://www.sanmiguel.com.ph",
-      "image": "san-miguel.jpg",
+      "image": "data:image/png;base64,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",
       "membership_level": "NP",
       "other_information": "San Miguel Corporation is a Filipino multinational publicly listed conglomerate holding company. It is the Philippines' largest corporation in terms of revenue."
     },
@@ -40,7 +40,7 @@
       "address": "SM Central Business Park, Bay City, Pasay, Metro Manila, Philippines",
       "phone": "+63 2 8867 8338",
       "website": "https://www.sminvestments.com",
-      "image": "sm-investments.jpg",
+      "image": "https://www.sminvestments.com/wp-content/uploads/2023/04/sm-investments-footer-041223.png",
       "membership_level": "Gold",
       "other_information": "SM Investments Corporation is a holding company with interests in shopping mall development and management, retail, real estate development, banking, and tourism."
     },
@@ -49,7 +49,7 @@
       "address": "7899 Makati Avenue, Makati, Metro Manila, Philippines",
       "phone": "+63 2 8840 7000",
       "website": "https://www.bdo.com.ph",
-      "image": "bdo-unibank.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/BDO_Unibank_%28logo%29.svg/400px-BDO_Unibank_%28logo%29.svg.png",
       "membership_level": "Silver",
       "other_information": "BDO Unibank, Inc. (BDO) is a Philippine banking company based in Makati. It is a member of the SM Group."
     },
@@ -58,7 +58,7 @@
       "address": "Ramon Cojuangco Building, Makati Avenue, Makati, Metro Manila, Philippines",
       "phone": "+63 2 8888 1710",
       "website": "https://www.pldt.com",
-      "image": "pldt.jpg",
+      "image": "https://main.pldt.com/images/pldt-corpwebsite-navigation-logo.png",
       "membership_level": "Bronze",
       "other_information": "PLDT Inc. is the largest telecommunications and digital services company in the Philippines. It is also involved in broadcasting, publishing, and outsourced services."
     }
