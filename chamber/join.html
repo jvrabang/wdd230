@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vigan Chamber of Commerce</title>
-    <meta name="description" content="WDD 230 - JV Rabang - Vigan Chamber of Commerce Home Page">
+    <title>Join Vigan Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - JV Rabang - Vigan Chamber of Commerce Joim Page">
     <meta name="author" content="JV Rabang">
-    <meta property="og:title" content="WDD 230 - JV Rabang - Vigan Chamber of Commerce Home Page">
+    <meta property="og:title" content="WDD 230 - JV Rabang - Vigan Chamber of Commerce Join Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://whc.unesco.org/uploads/thumbs/news_948-1000-686-20121024160540.jpg"> 
     <meta property="og:url" content="https://jvrabang.github.io/wdd230/chamber"> 
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon_small.ico">
@@ -31,79 +32,91 @@
             <li class="hover-underline-animation"><a href="#">Join</a></li>
         </ul>
     </nav>
-    <main class="home">
+    <main class="join">
         <div id="hero-section">
-            <img id="hero-img" src="images/hero-img-light1.webp" alt="Calle Crisologo in Vigan City">
+            <img id="hero-img" src="images/join-us.png" alt="Calle Crisologo in Vigan City">
             
             <div id="hero-button-container">
-                <button id="hero-button">Join Now!</button>
-            </div>
-            <div class="switch">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <span class="slider round"></span>
-                </label>
+                <button id="hero-button" onclick="scrollToLeftbar()">Join Now!</button>
             </div>
         </div>
-        <section id="current-events-section">
-            <h2>Current Events</h2>
-            <img src="images/current-events-1.jpg" alt="Locale in Vigan During Street Dancing Parade">
-            <p>Vigan City recently hosted a vibrant festival that showcased the rich tapestry of its 
-                local culture. The festivities highlighted traditional crafts such as weaving and clay 
-                pot making, providing a platform for artisans to display their intricate skills. The 
-                city's streets came alive with colorful parades and cultural performances, embodying 
-                the spirit of unity and heritage. Visitors immersed themselves in the artistry of 
-                handwoven textiles and intricately crafted clay pots, celebrating the city's dedication 
-                to preserving these time-honored traditions.
-            </p>
-        </section>
-        <section id="current-weather-section">
-            <h2>Current Weather</h2>
-                <div class="label">
-                <label for="temperature">Temperature (°C):</label>
-                <input type="number" id="temperature" value="23">
-                </div>
-                <div class="label">
-                <label for="windspeed">Wind Speed (km/h):</label>
-                <input type="number" id="windspeed" value="10">
-                </div>
-                <div class="label">
-                <button id="calculate">Calculate Wind Chill</button>
-                </div>
-                <div class="label">
-                <p id="windchill-result"></p>
-                </div>
-        </section>
-        <section class="ads">
-            <h2>Business Registration</h2>
-            <img src="images/vigan-business.webp" alt="Vigan Public Market">
-            <div class="content-box"></div>
-            <p>Navigating business registration in Vigan City is a streamlined process, 
-                ensuring efficiency and convenience. With a commitment to fostering entrepreneurship, 
-                Vigan provides a welcoming environment for businesses to thrive.</p>
-            <button>Learn More</button>
-        </section>
-        <section class="ads">
-            <h2>Events Calendar</h2>
-            <img src="images/vigan-activities.webp" alt="Street Dancing in Vigan">
-            <div class="content-box">
-            </div>
-            <p>Stay tuned for a dynamic year ahead with our Chamber of Commerce's meticulously 
-                planned calendar of events for 2024. From networking sessions to industry 
-                conferences, we aim to empower businesses and foster collaborative growth 
-                throughout the year.</p>
-            <button>Learn More</button>
-        </section>
-        <section class="ads">
-            <h2>Tourism Information </h2>
-            <img src="images/vigan-tourism.webp" alt="Vigan Kalesa">
-            <div class="content-box"></div>
-            <p>Vigan City, a UNESCO World Heritage site, beckons with its timeless charm. 
-                Immerse yourself in centuries-old cobblestone streets and Spanish colonial 
-                architecture. Indulge in local delicacies and embrace the unique blend of history and 
-                culture that makes Vigan a must-visit destination.</p>
-            <button>Learn More</button>
-        </section>
+        <div id="join-contents">
+            <section id="leftbar">
+                <h2>Enter Details Below</h2>
+                <form action="thankyou.html" method="get">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+    
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+    
+                    <label for="position">Title/Position:</label>
+                    <input type="text" id="position" name="position" required pattern="[a-zA-Z\s-]{7,}$">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+    
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="organization">Organization Name:</label>
+                    <input type="text" id="organization" name="organization" required>
+    
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="NP">NP Membership (Free)</option>
+                        <option value="Bronze">Bronze Membership ($50)</option>
+                        <option value="Silver">Silver Membership ($100)</option>
+                        <option value="Gold">Gold Membership ($200)</option>
+                    </select>
+    
+                    <label for="description">Organization Description:</label>
+                    <textarea id="description" name="description"></textarea>
+    
+                    <input type="hidden" id="formLoadedTime" name="formLoadedTime">
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+            </section>
+            <section id="rightbar">
+                <h2>Membership Benefits</h2>
+                <div class="membership-tier">
+                    <h3>NP Membership (Free)</h3>
+                    <img class="join-logo" src="images/free.png" alt="Free Membership" loading="lazy">
+                    <ul>
+                        <li>Access to Chamber networking events.</li>
+                        <li>Listing in the Chamber's online directory.</li>
+                        <li>Participation in Chamber committees and task forces.</li>
+                        <li>Subscription to Chamber newsletters and updates.</li>
+                    </ul>
+                    <h3>Bronze Membership ($50)</h3>
+                    <img class="join-logo" src="images/bronze.png" alt="Bronze Membership" loading="lazy">
+                    <ul>
+                        <li>All benefits of NP Membership.</li>
+                        <li>Discounted rates for Chamber-sponsored workshops and seminars.</li>
+                        <li>Recognition as a Bronze Member in Chamber publications and events.</li>
+                        <li>Priority access to Chamber resources and services.</li>
+                    </ul>
+                    <h3>Silver Membership ($100)</h3>
+                    <img class="join-logo" src="images/silver.png" alt="Silver Membership" loading="lazy">
+                    <ul>
+                        <li>All benefits of Bronze Membership.</li>
+                        <li>Invitations to exclusive Chamber luncheons with industry leaders.</li>
+                        <li>Enhanced visibility through sponsorship opportunities at Chamber events.</li>
+                        <li>Access to market research and business development resources.</li>
+                    </ul>
+                    <h3>Gold Membership ($200)</h3>
+                    <img class="join-logo" src="images/gold.png" alt="Silver Membership" loading="lazy">
+                    <ul>
+                        <li>All benefits of Silver Membership.</li>
+                        <li>Featured spotlight on the Chamber's website and social media platforms.</li>
+                        <li>Complimentary passes to premium Chamber events and conferences.</li>
+                        <li>Dedicated support from Chamber staff for business inquiries and advocacy efforts.</li>
+                    </ul>
+                </div>              
+            </section>
+        </div>
     </main>
     <footer>
         <p>Contact Us: chamberofcommerce@vigan.gov.ph | +63 123 456 789 </p>
@@ -115,5 +128,6 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/welcome.js"></script>
+    <script src="scripts/click.js"></script>
 </body>
 </html>

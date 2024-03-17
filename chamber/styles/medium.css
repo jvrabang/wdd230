@@ -49,31 +49,38 @@
         grid-template-columns: 20rem auto;
     }
 
-    #leftbar {
+    #discover-contents #leftbar {
         grid-column: 1/2;
     }
 
-    #rightbar {
+    #discover-contents #rightbar {
         grid-column: 2/3;
     }
 
-    #rightbar img {
-        width: 95%;
+    #discover-contents  #rightbar img {
+    width: 95%;
     }
 
-    #leftbar {
+    #discover-contents #leftbar {
         max-height: 55rem;
         min-width: 280px;
     }
     
-    #rightbar {
+    #discover-contents #rightbar {
         max-width: 1000px;
     }
 
-    #discover-contents {
-        display: flex;
-        justify-content: center;
-        
+    #join-contents #rightbar {
+        min-width: 500px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #join-contents #leftbar {
+        min-width: 500px;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     }
 
 }

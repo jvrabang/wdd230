@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
 }
 
-body p, body li, button, label, input {
+body p, body li, button, label, input, select {
     font-family: 'Open Sans', Helvetica, sans-serif;
     color: var(--font-color);
 }
@@ -145,6 +145,7 @@ main h2 {
 }
 
 footer {
+
     background-color:  #29363B;
     text-align: center;
     margin: 0;
@@ -346,13 +347,22 @@ input:checked + .slider:before {
     overflow: hidden;
 }
 
-#rightbar img {
+#join-contents > section {
+    margin: 1em;
+    border: 1px solid;
+    border-color: var(--border-color);
+    border-radius: 10px;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+#discover-contents #rightbar img {
     margin-left: 1rem;
     margin-right: 1rem;
     width: 94%;
 }
 
-#leftbar section {
+#discover-contents #leftbar section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,13 +370,13 @@ input:checked + .slider:before {
 }
 
 
-#leftbar img {
+#discover-contents #leftbar img {
     height: 100px;
     padding-left: 1rem;
     transition: transform 0.3s ease;
 }
 
-#leftbar img:hover {
+#discover-contents #leftbar img:hover {
     transform: scale(1.1); 
 }
 
@@ -402,6 +412,97 @@ input:checked + .slider:before {
     background-color: #383d3f; 
     margin-left: 1rem;
     margin-right: 1rem; 
-  }
+}
 
+.join-logo {
+    max-width: 200px;
+}
 
+.membership-tier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.membership-tier > h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Form container */
+#leftbar form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Form elements */
+#leftbar form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#leftbar form input[type="text"],
+#leftbar form input[type="email"],
+#leftbar form input[type="tel"],
+#leftbar form textarea,
+#leftbar form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Form submission button */
+#leftbar form button[type="submit"] {
+    background-color: #383d3f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#leftbar form button[type="submit"]:hover {
+    background-color: #7e553d;
+}
+
+#leftbar form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.thankyou-box {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    margin-bottom: 5rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+}
+
+#thank-you img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Adjust as needed for spacing */
+}
