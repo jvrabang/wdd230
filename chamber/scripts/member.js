@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const membersContainer = document.getElementById("members-container");
 
-    fetch("data/members.json")
+    fetch("https://jvrabang.github.io/wdd230/chamber/data/members.json")
         .then(response => response.json())
         .then(data => {
             data.forEach(member => {
