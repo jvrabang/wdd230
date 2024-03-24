@@ -37,7 +37,7 @@ html {
     --button-color: #48555D;
     --table-header-bg: #54616d;
     --banner-bg: #29363b;
-    --benner-text-color: #f5f5dc;
+    --banner-text-color: #f5f5dc;
 }
 
 
@@ -723,10 +723,14 @@ footer {
 }
 
 #banner-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
     font-size: 1rem;
+}
+
+#banner-content h2 {
+    margin-bottom: 0;
+    color: var(--banner-text-color);
 }
 
 #close-banner {

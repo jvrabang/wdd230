@@ -3,7 +3,7 @@ function isBannerVisible() {
     const today = new Date();
     const dayOfWeek = today.getDay(); // Sunday is 0, Monday is 1, and so on
 
-    return dayOfWeek >= 1 && dayOfWeek <= 3; // Monday to Wednesday
+    return dayOfWeek >= 0 && dayOfWeek <= 3; // Monday to Wednesday
 }
 
 document.addEventListener('DOMContentLoaded', function() {
