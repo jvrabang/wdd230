@@ -76,16 +76,16 @@
       }
       
     .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #f3eae6;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #f3eae6;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
     }
     
     .hover-underline-animation:hover::after {
@@ -153,5 +153,17 @@
 
     #hero-button {
         font-size: 2rem;
-    }    
+    }
+
+    #active::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(1); /* Always underline */
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #83565f;
+    }
 }
+    

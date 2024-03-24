@@ -96,7 +96,6 @@ header {
     text-decoration: none;
     font-size: 1.3rem;
     background-color:#48555D;
-    border-bottom: 2px solid transparent;
 }
 
 .navigation a:hover, .navigation a:active{
@@ -104,8 +103,9 @@ header {
     color: #29363B;
 }
 
-.navigation a.active {
-    border-bottom-color: #fff; /* Add bottom border color when link is active */
+#active::before {
+    content: "📍"; /* Add the pin icon */
+    margin-right: 5px; /* Add margin between the pin icon and the text */
 }
 
 #hero-button-container {
