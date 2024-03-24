@@ -96,11 +96,16 @@ header {
     text-decoration: none;
     font-size: 1.3rem;
     background-color:#48555D;
+    border-bottom: 2px solid transparent;
 }
 
 .navigation a:hover, .navigation a:active{
     background-color: #f3eae6;
     color: #29363B;
+}
+
+.navigation a.active {
+    border-bottom-color: #fff; /* Add bottom border color when link is active */
 }
 
 #hero-button-container {
@@ -740,3 +745,31 @@ footer {
 #close-banner:hover {
     color: #ff0000; /* Change color on hover */
 }
+
+#affiliated-business img {
+    height: 50px;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#affiliated-business p {
+    margin: 0;
+    padding-left: 1rem;
+    color: var(--font-color);
+    padding-top: .5rem;
+}
+
+#affiliated-business h3 {
+    padding-top: .5rem;
+}
+
+#business-list .company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
