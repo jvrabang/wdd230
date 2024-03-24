@@ -47,8 +47,16 @@
         </section>
         <section class="card">
             <h3>Information</h3>
-            <p id="weatherStatus">Weather: </p>
+            <div class="info-contents">
+            <div class="weather-container">
+                <img id="weather-icon" src="" alt="">
+                <p id="current-temp"></p>
+                <p>-</p>
+                <p></p>
+                <figcaption></figcaption>
+              </div>
             <p id="numberOfVisits">Page Visits: <span id="visitCount">0</span></p>
+            </div>
         </section>
         <section class="card">
             <h3>Google Maps</h3>
@@ -68,5 +76,6 @@
     <script src="scripts/hamburger-button.js"></script>
     <script src="scripts/page-counter.js"></script>
     <script src="scripts/dynamic-menu.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

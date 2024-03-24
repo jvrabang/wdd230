@@ -194,3 +194,22 @@ iframe.maps {
         font-size: 14px;
     }
 }
+
+.weather-container {
+    display: flex;
+    align-items: center;
+}
+
+.weather-container p, .weather-container figcaption {
+    padding: 0;
+    margin: 0;
+    padding-right: .2rem;
+}
+
+.info-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
