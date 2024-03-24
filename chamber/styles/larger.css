@@ -155,6 +155,12 @@
         font-size: 2rem;
     }
 
+    #active {
+        background-color: #83565f66;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
     #active::before {
         content: "";
         position: absolute;
