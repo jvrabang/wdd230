@@ -47,33 +47,28 @@
         </div>
         <section id="current-events-section">
             <h2>Current Events</h2>
-            <img src="images/current-events-1.jpg" alt="Locale in Vigan During Street Dancing Parade">
-            <p>Vigan City recently hosted a vibrant festival that showcased the rich tapestry of its 
-                local culture. The festivities highlighted traditional crafts such as weaving and clay 
-                pot making, providing a platform for artisans to display their intricate skills. The 
-                city's streets came alive with colorful parades and cultural performances, embodying 
-                the spirit of unity and heritage. Visitors immersed themselves in the artistry of 
-                handwoven textiles and intricately crafted clay pots, celebrating the city's dedication 
-                to preserving these time-honored traditions.
-            </p>
+            <div class="current-events-container">
+                <img src="images/current-events-1.jpg" alt="Locale in Vigan During Street Dancing Parade">
+                <p>Vigan City, a gem nestled in the Philippines, recently dazzled with a vibrant festival showcasing its rich cultural tapestry. The event spotlighted age-old crafts like weaving and clay pot making, where artisans demonstrated their intricate skills, weaving stories through their creations. Streets pulsated with colorful parades and cultural performances, echoing with the spirit of unity and heritage.</p>
+                <p>Visitors were treated to a sensory feast, immersing themselves in the artistry of handwoven textiles and delicately crafted clay pots. These treasures, steeped in tradition, served as a testament to the city's commitment to preserving its cultural heritage.</p>
+                <p>As the festivities drew to a close, echoes of music and laughter lingered in the air, leaving behind memories of a celebration that honored the past while embracing the future. Vigan City's dedication to its roots illuminates a path forward, ensuring that its rich cultural legacy continues to thrive for generations to come.</p>
+            </div>
         </section>
         <section id="current-weather-section">
             <h2>Current Weather</h2>
-                <div class="label">
-                <label for="temperature">Temperature (°C):</label>
-                <input type="number" id="temperature" value="23">
-                </div>
-                <div class="label">
-                <label for="windspeed">Wind Speed (km/h):</label>
-                <input type="number" id="windspeed" value="10">
-                </div>
-                <div class="label">
-                <button id="calculate">Calculate Wind Chill</button>
-                </div>
-                <div class="label">
-                <p id="windchill-result"></p>
-                </div>
+            <div class="weather-container">
+                <span id="current-weather-icon" class="weather-icon"></span>
+                <p>
+                    <span id="current-temp"></span> - <span id="weather-description"></span>
+                </p>
+            </div>  
+            <h3>Forecast</h3>
+            <table id="forecast-table">
+                <tbody id="forecast-body">
+                </tbody>
+            </table>
         </section>
+        
         <section class="ads">
             <h2>Business Registration</h2>
             <img src="images/vigan-business.webp" alt="Vigan Public Market">
@@ -81,7 +76,6 @@
             <p>Navigating business registration in Vigan City is a streamlined process, 
                 ensuring efficiency and convenience. With a commitment to fostering entrepreneurship, 
                 Vigan provides a welcoming environment for businesses to thrive.</p>
-            <button>Learn More</button>
         </section>
         <section class="ads">
             <h2>Events Calendar</h2>
@@ -92,7 +86,6 @@
                 planned calendar of events for 2024. From networking sessions to industry 
                 conferences, we aim to empower businesses and foster collaborative growth 
                 throughout the year.</p>
-            <button>Learn More</button>
         </section>
         <section class="ads">
             <h2>Tourism Information </h2>
@@ -102,7 +95,12 @@
                 Immerse yourself in centuries-old cobblestone streets and Spanish colonial 
                 architecture. Indulge in local delicacies and embrace the unique blend of history and 
                 culture that makes Vigan a must-visit destination.</p>
-            <button>Learn More</button>
+        </section>
+        <section id="banner-section" class="banner-top-center" style="display: none;">
+            <div id="banner-content">
+                <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+                <button id="close-banner">x</button>
+            </div>
         </section>
     </main>
     <footer>
@@ -116,5 +114,7 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/welcome.js"></script>
     <script src="scripts/click2.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/hide-banner.js"></script>
 </body>
 </html>
