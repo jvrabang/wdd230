@@ -25,7 +25,14 @@
         display: none;
     } */
 
-    
+    #page-logo {
+        height:120px;
+    }
+
+    #menu {
+        top: 40px;
+    }
+
     .home {
         display: grid;
         grid-template-columns: repeat(2, 1fr)
@@ -83,14 +90,18 @@
         margin-bottom: 2rem;
     }
 
-    #forecast-table {
-        width: 100%; /* Set table width to 100% on smaller screens */
-    }
-
     #forecast-table th,
     #forecast-table td {
         padding: 8px; /* Adjust padding for smaller screens */
         font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    #banner-content {
+        font-size: 2rem;
+    }
+
+    #hero-button {
+        font-size: 2rem;
     }
     
 }

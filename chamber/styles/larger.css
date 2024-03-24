@@ -1,4 +1,12 @@
 @media (min-width: 1025px) {
+    #page-logo {
+        height:120px;
+    }
+
+    #menu {
+        top: 40px;
+    }
+
     .navigation {
 		display: flex;
         position: absolute;
@@ -138,5 +146,12 @@
         max-height: 65rem;
         min-width: 500px;
     }
-    
+
+    #banner-content {
+        font-size: 2rem;
+    }
+
+    #hero-button {
+        font-size: 2rem;
+    }    
 }

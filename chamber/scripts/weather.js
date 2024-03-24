@@ -50,7 +50,8 @@ function displayForecast(data) {
     const headerRow = document.createElement('tr');
 
     // Iterate through each day to create column headers
-    forecastList.forEach(item => {
+    const next3Days = forecastList.slice(1, 4); // Select only the next 3 days
+    next3Days.forEach(item => {
         const date = new Date(item.dt * 1000);
         const day = date.toLocaleDateString('en-US', { weekday: 'short' });
         const dayCell = document.createElement('th');
@@ -65,7 +66,7 @@ function displayForecast(data) {
     const weatherRow = document.createElement('tr');
 
     // Iterate through each day to populate weather data
-    forecastList.forEach(item => {
+    next3Days.forEach(item => {
         const temp = Math.round(item.main.temp);
         const weather = item.weather[0].description.charAt(0).toUpperCase() + item.weather[0].description.slice(1);
         const iconCode = item.weather[0].icon;
@@ -80,9 +81,6 @@ function displayForecast(data) {
     // Append the weather row to the forecast table body
     forecastBody.appendChild(weatherRow);
 }
-
-
-
 
 // Fetch data on page load
 fetchData();

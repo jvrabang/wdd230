@@ -18,6 +18,12 @@
     <link rel="icon" href="favicon_small.ico">
 </head>
 <body>
+    <section id="banner-section" class="banner-top-center" style="display: none;">
+        <div id="banner-content">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button id="close-banner">&#x24E7;</button>
+        </div>
+    </section>
     <header>
         <a href="index.html"><img id="page-logo" src="images/header-img-light.webp" alt="Vigan Kalesa"></a>
         <h1>Vigan City Chamber of Commerce</h1>
@@ -33,7 +39,9 @@
     </nav>
     <main class="home">
         <div id="hero-section">
-            <img id="hero-img" src="images/hero-img-light1.webp" alt="Calle Crisologo in Vigan City">
+            <img id="hero-img" src="images/hero-img-light1.webp" 
+            srcset="images/hero-img-light1.webp 651w, images/hero-img-light-small.webp 650w" 
+            alt="Calle Crisologo in Vigan City">
             
             <div id="hero-button-container">
                 <button id="hero-button" onclick="redirectToJoinPage()">Join Now!</button>
@@ -60,13 +68,13 @@
                 <span id="current-weather-icon" class="weather-icon"></span>
                 <p>
                     <span id="current-temp"></span> - <span id="weather-description"></span>
-                </p>
-            </div>  
+                </p>  
             <h3>Forecast</h3>
             <table id="forecast-table">
                 <tbody id="forecast-body">
                 </tbody>
             </table>
+            </div>
         </section>
         
         <section class="ads">
@@ -95,12 +103,6 @@
                 Immerse yourself in centuries-old cobblestone streets and Spanish colonial 
                 architecture. Indulge in local delicacies and embrace the unique blend of history and 
                 culture that makes Vigan a must-visit destination.</p>
-        </section>
-        <section id="banner-section" class="banner-top-center" style="display: none;">
-            <div id="banner-content">
-                <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
-                <button id="close-banner">x</button>
-            </div>
         </section>
     </main>
     <footer>

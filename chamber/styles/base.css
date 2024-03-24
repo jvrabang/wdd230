@@ -63,8 +63,8 @@ button {
     opacity: 1; 
 }
 
-header img {
-    height:120px;
+#page-logo {
+    height:80px;
     mix-blend-mode: luminosity;
 }
 
@@ -109,18 +109,6 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-#hero-button {
-    background-color: #fafafa;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    color: #29363B;
-    font-family: "Open Sans";
-    appearance: none;
-    box-shadow: none;
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
 #hero-button:hover {
@@ -185,7 +173,7 @@ body header h1 {
 	color: #ffffff;
  	position: absolute;
     background-color: transparent;
-	top: 40px;
+	top: 20px;
 	right: 20px;
     border-radius: 0;
     border: none;
@@ -437,6 +425,8 @@ input:checked + .slider:before {
 #leftbar form {
     max-width: 400px;
     margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #leftbar form label {
@@ -526,7 +516,7 @@ footer {
   color: #ffffff;
   cursor: pointer;
   display: inline-flex;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
   justify-content: center;
   line-height: 20px;
@@ -546,6 +536,7 @@ footer {
   -webkit-user-select: none;
   vertical-align: middle;
 }
+
 
 #hero-button:hover,
 #hero-button:focus { 
@@ -709,11 +700,11 @@ footer {
 /* Banner styles */
 .banner-top-center {
     position: fixed;
-    top: 100;
+    top:10rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: #f5f5dce8;
+    padding: 20px;
     width: 80%;
     max-width: 500px;
     text-align: center;
@@ -725,6 +716,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 
 #close-banner {
@@ -734,6 +726,9 @@ footer {
     cursor: pointer;
     padding: 0;
     margin: 0;
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 /* Close button styles */
